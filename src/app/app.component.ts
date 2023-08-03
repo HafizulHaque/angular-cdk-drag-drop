@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { UserInterface } from './user.interface';
+import { userData } from './data';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +8,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-cdk-drag-drop';
+  users: UserInterface[] = userData;
 }
